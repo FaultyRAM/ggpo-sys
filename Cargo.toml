@@ -1,0 +1,11 @@
+[package]
+name = "ggpo-sys"
+version = "0.1.0"
+authors = ["FaultyRAM <316014+FaultyRAM@users.noreply.github.com>"]
+edition = "2018"
+description = "Raw, unsafe bindings to the GGPO rollback networking library."
+readme = "README.md"
+repository = "https://github.com/FaultyRAM/ggpo-sys"
+license = "Apache-2.0 OR MIT"
+keywords = ["rollback", "network", "netplay", "p2p", "online"]
+categories = ["external-ffi-bindings", "game-development", "network-programming"]
