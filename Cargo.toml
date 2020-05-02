@@ -10,3 +10,12 @@ license = "Apache-2.0 OR MIT"
 keywords = ["rollback", "network", "netplay", "p2p", "online"]
 categories = ["external-ffi-bindings", "game-development", "network-programming"]
 links = "GGPO"
+
+[build-dependencies]
+cc = { version = "^1.0.0", features = ["parallel"] }
+
+# Include winapi as a dependency on Windows. winapi has in-depth support for linking against Windows
+# libraries, and GGPO uses a few, so this saves us quite the hassle.
+[target.'cfg(windows)'.dependencies.winapi]
+version = "^0.3.0"
+features = ["processenv", "processthreadsapi", "timeapi", "winsock2", "winuser", "ws2tcpip"]
