@@ -12,6 +12,7 @@ categories = ["external-ffi-bindings", "game-development", "network-programming"
 links = "GGPO"
 
 [build-dependencies]
+bindgen = "^0.53.0"
 cc = { version = "^1.0.0", features = ["parallel"] }
 
 # Include winapi as a dependency on Windows. winapi has in-depth support for linking against Windows
