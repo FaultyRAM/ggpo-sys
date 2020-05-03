@@ -11,6 +11,9 @@ keywords = ["rollback", "network", "netplay", "p2p", "online"]
 categories = ["external-ffi-bindings", "game-development", "network-programming"]
 links = "GGPO"
 
+[package.metadata.docs.rs]
+targets = ["x86_64-pc-windows-msvc"]
+
 [build-dependencies]
 bindgen = "^0.53.0"
 cc = { version = "^1.0.0", features = ["parallel"] }
