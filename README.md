@@ -3,8 +3,22 @@
 [![Crates.io](https://img.shields.io/crates/v/ggpo-sys.svg)](https://crates.io/crates/ggpo-sys)
 [![Docs.rs](https://docs.rs/ggpo-sys/badge.svg)](https://docs.rs/ggpo-sys)
 
-ggpo-sys provides raw, unsafe bindings to [GGPO](https://ggpo.net), a library for rollback
-networking.
+ggpo-sys is a Rust library that provides raw, unsafe bindings to [GGPO](https://ggpo.net), a library
+for rollback networking.
+
+## Requirements
+
+ggpo-sys depends on the following tools at build time:
+
+* A recent version of stable Rust 🦀
+* A C++ toolchain, in order to build the GGPO sources
+    * ggpo-sys uses [cc](https://github.com/alexcrichton/cc-rs) to build GGPO. CMake is *not*
+      required.
+    * 32-bit targets are untested and unsupported. **Use at your own risk.**
+    * GGPO only builds under Visual C++ and only for Windows targets. Support for other toolchains
+      is therefore blocked pending fixes to upstream.
+* libclang
+    * Used for generating bindings to ggponet.h.
 
 ## Usage
 
