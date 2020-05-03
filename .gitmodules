@@ -1,0 +1,3 @@
+[submodule "libggpo"]
+	path = libggpo
+	url = https://github.com/pond3r/ggpo.git

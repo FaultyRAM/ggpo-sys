@@ -15,18 +15,20 @@ To use ggpo-sys, simply add it to your `Cargo.toml`:
 ggpo-sys = "^0.1.0"
 ```
 
-For more details, refer to the source comments in
-[ggponet.h](https://github.com/pond3r/ggpo/blob/master/src/include/ggponet.h).
+For more details, refer to the source comments in [ggponet.h](libggpo/src/include/ggponet.h).
 
 ## License
 
-Licensed under either of
+ggpo-sys is licensed under either of
 
 * Apache License, Version 2.0,
   ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
 * MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
 
 at your option.
+
+Additionally, ggpo-sys bundles a copy of the GGPO source code, which is licensed separately under
+the MIT license ([libggpo/LICENSE](libggpo/LICENSE) or http://opensource.org/licenses/MIT).
 
 ### Contribution
 

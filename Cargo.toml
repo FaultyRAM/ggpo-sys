@@ -9,3 +9,4 @@ repository = "https://github.com/FaultyRAM/ggpo-sys"
 license = "Apache-2.0 OR MIT"
 keywords = ["rollback", "network", "netplay", "p2p", "online"]
 categories = ["external-ffi-bindings", "game-development", "network-programming"]
+links = "GGPO"
